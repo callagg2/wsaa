@@ -1,0 +1,18 @@
+{
+    "name": "gemini_created_json_with_instances_of_andrew.json",
+    "path": "gemini_created_json_with_instances_of_andrew.json",
+    "sha": "30d80521be4c8e6fbe4f2ac0d93c787e9f2bb68d",
+    "size": 1077,
+    "url": "https://api.github.com/repos/callagg2/aprivateone/contents/gemini_created_json_with_instances_of_andrew.json?ref=main",
+    "html_url": "https://github.com/callagg2/aprivateone/blob/main/gemini_created_json_with_instances_of_andrew.json",
+    "git_url": "https://api.github.com/repos/callagg2/aprivateone/git/blobs/30d80521be4c8e6fbe4f2ac0d93c787e9f2bb68d",
+    "download_url": "https://raw.githubusercontent.com/callagg2/aprivateone/main/gemini_created_json_with_instances_of_andrew.json?token=ADU5EKTF7V6ZWJXWU5BD5TTJTG3ZZAA",
+    "type": "file",
+    "content": "WwogIHsKICAgICJpZCI6ICJBMDAxIiwKICAgICJmaXJzdF9uYW1lIjogIkFu\nZHJldyIsCiAgICAibGFzdF9uYW1lIjogIk1pbGxlciIsCiAgICAiZW1haWwi\nOiAiYS5taWxsZXJAdGVjaGZsb3cuaW8iLAogICAgInJvbGUiOiAiU2VuaW9y\nIERldmVsb3BlciIsCiAgICAiYWN0aXZlIjogdHJ1ZSwKICAgICJ0YWdzIjog\nWyJmcm9udGVuZCIsICJyZWFjdCIsICJsZWFkIl0KICB9LAogIHsKICAgICJp\nZCI6ICJBMDAyIiwKICAgICJmaXJzdF9uYW1lIjogIkFuZHJldyIsCiAgICAi\nbGFzdF9uYW1lIjogIkNoZW4iLAogICAgImVtYWlsIjogImFuZHJldy5jaGVu\nQGRhdGFzb2x1dGlvbnMuY29tIiwKICAgICJyb2xlIjogIkRhdGEgU2NpZW50\naXN0IiwKICAgICJhY3RpdmUiOiBmYWxzZSwKICAgICJ0YWdzIjogWyJweXRo\nb24iLCAibWwiLCAicmVzZWFyY2giXQogIH0sCiAgewogICAgImlkIjogIkEw\nMDMiLAogICAgImZpcnN0X25hbWUiOiAiQW5kcmV3IiwKICAgICJsYXN0X25h\nbWUiOiAiVGhvbXBzb24iLAogICAgImVtYWlsIjogImF0aG9tcHNvbkBjcmVh\ndGl2ZS5uZXQiLAogICAgInJvbGUiOiAiVUkvVVggRGVzaWduZXIiLAogICAg\nImFjdGl2ZSI6IHRydWUsCiAgICAidGFncyI6IFsiZmlnbWEiLCAicHJvdG90\neXBpbmciXQogIH0sCiAgewogICAgImlkIjogIkEwMDQiLAogICAgImZpcnN0\nX25hbWUiOiAiQW5kcmV3IiwKICAgICJsYXN0X25hbWUiOiAiR2FyY2lhIiwK\nICAgICJlbWFpbCI6ICJhZ2FyY2lhQG9wcy1jZW50cmFsLmNvbSIsCiAgICAi\ncm9sZSI6ICJEZXZPcHMgRW5naW5lZXIiLAogICAgImFjdGl2ZSI6IHRydWUs\nCiAgICAidGFncyI6IFsiYXdzIiwgImt1YmVybmV0ZXMiLCAiZG9ja2VyIl0K\nICB9LAogIHsKICAgICJpZCI6ICJBMDA1IiwKICAgICJmaXJzdF9uYW1lIjog\nIkFuZHJldyIsCiAgICAibGFzdF9uYW1lIjogIk8nTmVpbGwiLAogICAgImVt\nYWlsIjogIm9uZWlsbC5hbmRyZXdAZmludGVjaC1ncm91cC5vcmciLAogICAg\nInJvbGUiOiAiUHJvZHVjdCBNYW5hZ2VyIiwKICAgICJhY3RpdmUiOiB0cnVl\nLAogICAgInRhZ3MiOiBbImFnaWxlIiwgInN0cmF0ZWd5Il0KICB9Cl0K\n",
+    "encoding": "base64",
+    "_links": {
+        "self": "https://api.github.com/repos/callagg2/aprivateone/contents/gemini_created_json_with_instances_of_andrew.json?ref=main",
+        "git": "https://api.github.com/repos/callagg2/aprivateone/git/blobs/30d80521be4c8e6fbe4f2ac0d93c787e9f2bb68d",
+        "html": "https://github.com/callagg2/aprivateone/blob/main/gemini_created_json_with_instances_of_andrew.json"
+    }
+}

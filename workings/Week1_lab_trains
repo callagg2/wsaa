@@ -1,0 +1,57 @@
+# Printing_the_data_of_all_trains_in_Ireland_to_the_console
+
+
+import requests
+import csv
+
+from xml.dom.minidom import parseString
+url = "https://api.irishrail.ie/realtime/realtime.asmx/getCurrentTrainsXML"
+
+
+page = requests.get(url)
+doc = parseString(page.content)
+
+retrieve_tags=["TrainStatus","TrainLatitude","TrainLongitude","TrainCode","TrainDate","PublicMessage","Direction"]
+
+
+#check it works 
+#print(doc.toxml(),end="") # output to console
+
+# if we want to store the xml in a file. You can comment this out later
+with open("trains.xml","w") as xmlfp:
+    doc.writexml(xmlfp) 
+
+objTrainPositionsNodes = doc.getElementsByTagName("objTrainPositions")
+
+with open("week1_train.csv",mode="w",newline='') as train_file:
+    train_writer = csv.writer(train_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+   
+    for objTrainPositionsNode in objTrainPositionsNodes:
+        # note how it is getting the TrainCode node from within the objTrainPositions node
+        '''
+        traincodenode = objTrainPositionsNode.getElementsByTagName("TrainCode").item(0)
+        traincode = traincodenode.firstChild.nodeValue.strip()
+        #print (traincode)
+        '''
+
+        '''
+        trainlatitudenode = objTrainPositionsNode.getElementsByTagName("TrainLatitude").item(0)
+        trainlatitude = trainlatitudenode.firstChild.nodeValue.strip()
+        train_writer.writerow([traincode,trainlatitude])
+        #print (trainlatitude)
+        '''
+
+        '''
+       # dataList=[]
+       # dataList.append(traincode)
+       # train_writer.writerow(dataList)
+       '''
+
+        dataList=[]
+        for retrieve_tag in retrieve_tags:
+             datanode = objTrainPositionsNode.getElementsByTagName(retrieve_tag).item(0)
+             #print(datanode) # this will look like "<DOM Element: TrainStatus at 0x242fe5d08c0>"
+             dataList.append(datanode.firstChild.nodeValue.strip())
+             train_writer.writerow(dataList)
+
+
