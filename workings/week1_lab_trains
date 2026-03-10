@@ -1,6 +1,8 @@
 # Printing_the_data_of_all_trains_in_Ireland_to_the_console
 
 
+from ast import If
+
 import requests
 import csv
 
@@ -47,11 +49,24 @@ with open("week1_train.csv",mode="w",newline='') as train_file:
        # train_writer.writerow(dataList)
        '''
 
+        '''
         dataList=[]
         for retrieve_tag in retrieve_tags:
              datanode = objTrainPositionsNode.getElementsByTagName(retrieve_tag).item(0)
+             dataList.append(datanode.firstChild.nodeValue[0].strip())
              #print(datanode) # this will look like "<DOM Element: TrainStatus at 0x242fe5d08c0>"
-             dataList.append(datanode.firstChild.nodeValue.strip())
-             train_writer.writerow(dataList)
+        train_writer.writerow(dataList)
+        '''    
+             
+        datalist=[]
+        objTrainPositionsNodes = doc.getElementsByTagName("objTrainPositions")
+        for objTrainPositionsNode in objTrainPositionsNodes:
+            traincodenode = objTrainPositionsNode.getElementsByTagName("TrainCode").item(0)
+            traincode = traincodenode.firstChild.nodeValue.strip()
+        #print (traincode)    
+            if traincode[0] == "D":
+                datalist.append(traincode.strip())
+                #print(traincode.strip())
+                train_writer.writerow(datalist)
 
-
+  
