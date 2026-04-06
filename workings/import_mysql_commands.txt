@@ -1,0 +1,22 @@
+import mysql.connector
+
+mydb = MySQL.connector.connect(
+host = "localhost",
+user ="???",
+password = "???"
+database = "???"
+)
+
+mycursor = mydb.cursor() # this is where the data is stored when read from the database
+sql= "some sql"
+mycursor.execute(sql)
+
+# commit if Create, update or delete
+mycursor.close()
+mydb.close()
+
+
+
+
+
+

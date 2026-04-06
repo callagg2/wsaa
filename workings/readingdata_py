@@ -1,0 +1,23 @@
+# reading data from a database
+#author: Gerry Callaghan
+
+import mysql.connector
+
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="",
+    database="wsaa1"
+)
+
+mycursor = mydb.cursor()
+sql = "Select * from books1 where id = %s"
+values = (2,)
+
+mycursor.execute(sql, values)
+results = mycursor.fetchall()
+for result in results:
+    print(result)
+
+mycursor.close()
+mydb.close()

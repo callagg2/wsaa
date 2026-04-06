@@ -1,0 +1,23 @@
+# inserting data into a database
+#author: Gerry Callaghan
+
+import mysql.connector
+
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="",
+    database="wsaa1"
+)
+
+mycursor = mydb.cursor()
+sql = "Insert into books1 (title, author, price) values (%s, %s,%s)"
+values = ("Donata Goes Mad", "Jimmy Reaper", 21)
+
+mycursor.execute(sql, values)
+
+mydb.commit()
+
+print("1 record inserted, ID:", mycursor.lastrowid)
+mycursor.close()
+mydb.close()
