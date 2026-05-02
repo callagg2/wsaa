@@ -5,6 +5,7 @@
 from urllib import response
 import json
 import requests
+url = "https://callagg2.pythonanywhere.com/routes"
 
 
 def findbyid(id):
@@ -48,7 +49,7 @@ def createroute(newroute):
 
 def readroutes():
     response = requests.get(url)
-    print(response.status_code) # check for status code
+    print(f"status code: {response.status_code}") # check for status code
     return response.json()
 
 
@@ -106,7 +107,7 @@ if __name__ == "__main__":
         'elevation': '215'
         }
 
-    #print(readroutes())
+    print(readroutes())
     #print(createroute(newbook))
     #print(findbyid(id))
     #print(updateroute(id, bookdiff))
