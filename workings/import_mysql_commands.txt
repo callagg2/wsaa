@@ -8,13 +8,40 @@ database = "???"
 )
 
 mycursor = mydb.cursor() # this is where the data is stored when read from the database
-sql= "some sql"
-mycursor.execute(sql)
 
-# commit if Create, update or delete
+sql= "some sql" for example sql = "insert into student (name, address) values (%s, %s)" values = ("Mary", "Galway")  cursor.execute (sql, values) 
+
+mycursor.execute(sql) # you are executing sql on the data that has been read from the database
+
+# commit if Create, update or delete -> you would do mydb.commit in this case because you are feeding back to the server
+
 mycursor.close()
-mydb.close()
+mydb.close()  if you don't close this, you can get resource leaks, you could run out of connections
 
+Getting data out of Database
+import mysql.connector
+
+db = mysql.connector.connect(
+host = "localhost",
+user ="???",
+password = "???"
+database = "???"
+)
+
+cursor = db.cursor() # this is where the data is stored when read from the database
+
+sql= "select * from books where id = %s"
+values = 1315
+
+cursor.execute(sql, values) # you are executing sql on the data that has been read from the database
+
+# now to work with the data
+results = cursor.fetchall() # (so it grabs everything)
+for result in results:
+	print (result)
+
+cursor.close()
+db.close()  if you don't close this, you can get resource leaks, you could run out of connections
 
 
 
