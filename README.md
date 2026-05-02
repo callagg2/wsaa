@@ -40,4 +40,6 @@ config_details = {
 ### Testing and Data Analysis 
 In the [`/project` directory](https://github.com/callagg2/wsaa/tree/main/project), you will find python scripts used for component testing. 
 
-A key file is `testing_downloading_from_API.py`. This script demonstrates how to: * **Download route information** directly from the API. * **Perform data processing** (e.g., calculating average distance or elevation for a specific group of routes). 
+A key file is `testing_downloading_from_API.py`. This script demonstrates how to: 
+* **Download route information** directly from the API. 
+* **Perform data processing** (e.g., calculating average distance or elevation for a specific group of routes). 
