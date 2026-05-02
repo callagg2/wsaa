@@ -28,7 +28,7 @@ To deploy these applications (e.g., on [PythonAnywhere](https://www.pythonanywhe
 
 ### Database Configuration
 The `DAO.py` file relies on a configuration object for database connectivity. If hosting elsewhere, ensure a config file exists with the following structure:
-```python
+
 config_details = {
     "host": "callagg2.mysql.pythonanywhere-services.com",
     "user": "root",
@@ -36,7 +36,7 @@ config_details = {
     "database": "callagg2$wsaa"
 }
 
-## Testing and Data Analysis 
-In the [`/project` directory](https://github.com/callagg2/wsaa/tree/main/project), you will find scripts used for component testing. 
+### Testing and Data Analysis 
+In the [`/project` directory](https://github.com/callagg2/wsaa/tree/main/project), you will find python scripts used for component testing. 
 
 A key file is `testing_downloading_from_API.py`. This script demonstrates how to: * **Download route information** directly from the API. * **Perform data processing** (e.g., calculating average distance or elevation for a specific group of routes). 
